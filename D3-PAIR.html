@@ -78,16 +78,16 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <img src="/image/logo.jpg" width="50px" height="50px" class="rounded mr-4">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item btn btn-outline-warning m-1 active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item btn btn-outline-warning m-1">
-            <a class="nav-link" href="bookFlight.html">Testimonial</a>
+            <a class="nav-link" href="#Testimonial">Testimonial</a>
           </li>
           <!-- <li class="nav-item btn btn-outline-warning m-1 dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -102,9 +102,10 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <button type="button" onclick="showHide()" class="btn mt-4 btn-outline-info">Hide/Show</button>
-      <div class="jumbotron my-4 shadow p-3 mb-5 bg-white rounded">
+    <div class="container" >
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Collaspe" 
+      aria-expanded="false" aria-controls="Collaspe">Show/Hide</button>
+      <div class="jumbotron my-4 shadow p-3 mb-5 bg-white rounded" id="Collaspe">
         <h1 class="display-4"><b><i>Travel Agency</i></b></h1>
         <p class="lead">Amaizing Destiantions</p>
         <hr class="my-4">
@@ -112,8 +113,9 @@
         <a class="btn btn-primary btn-lg" href="bookFlight.html" role="button">BOOK NOW</a>
         
       </div>
-      <button type="button" onclick="showHide()" class="btn btn-outline-info">Hide/Show</button>
-      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showhide" 
+      aria-expanded="false" aria-controls="collapseExample">Show/Hide</button>
+      <div id="showhide" class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
                 <div class="col mt-4 mb-4">
                     <div class="card">
                       <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="card-img-top" alt="..." />
@@ -165,8 +167,9 @@
                   </div>
             </div>
               <h1 class="display-4 shadow-lg p-3 mb-5 bg-white rounded"> Welcome Summer</h1>
-              <button type="button" onclick="showHide()" class="btn btn-outline-info">Hide/Show</button>
-              <div id="hotsummer" class="row row-cols-2 row-cols-md-3 row-cols-lg-6" display ="Wel"> 
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" 
+              aria-expanded="false" aria-controls="collapseExample">Show/Hide</button>
+              <div id="collapseExample" class="row row-cols-2 row-cols-md-3 row-cols-lg-6" display ="Wel"> 
                 <div class="col mt-4 mb-4">
                     <div class="card">
                       <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="card-img-top" alt="..." />
@@ -230,8 +233,9 @@
             </div>
             <div id="deleteFromPage">
             <h1 class="display-4 shadow-lg p-3 mb-5 bg-white rounded"> Deal of The day</h1>
-            <button type="button" onclick="showHide()" class="btn btn-outline-info">Hide/Show</button>
-            <div class="row mt-4 row-cols-2">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showhides" 
+      aria-expanded="false" aria-controls="collapseExample">Show/Hide</button>
+            <div class="row mt-4 row-cols-2" id="showhides">
               <div class="col-8">
                 <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" height="100%" width="100%" />
               </div>
@@ -249,45 +253,62 @@
               </div>
             </div>
           </div>
-          <h3 class=" shadow-lg p-3 mt-5 mb-5 sm-white rounded">Last Minute</h3>
-          <button type="button" onclick="showHide()" class="btn btn-outline-info">Hide/Show</button>
-          <div id="carouselExampleCaptions" class="carousel mt-4 slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Florida</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 class=" shadow-lg p-3 mt-5 mb-5 sm-white rounded" >Last Minute</h3>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showhidy" 
+          aria-expanded="false" aria-controls="collapseExample">Show/Hide</button>
+          <div id="showhidy">
+            <div id="carouselExampleCaptions" class="carousel mt-4 slide" data-ride="carousel">
+              <ol class="carousel-indicators" >
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Florida</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Dubai</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Bahamas</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Dubai</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Bahamas</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+          </div>
+          <h2 class=" shadow-lg p-3 mt-5 mb-5 sm-white rounded" id="Testimonial">Testimonials</h2>
+
+
+          <div >
+            <img src="https://static.nicethingspalomas.com/media//cms/slider/mobile/1_heather_mobile_nicethings.jpg" alt="Avatar" style="width:90px">
+            <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+            <p>I really enjoy my Travel with the Agency.</p>
+          </div>
+
+          <div >
+            <img src="https://cdn.pixabay.com/photo/2017/10/02/12/10/women-2808629__340.jpg" alt="Avatar" style="width:90px">
+            <p><span>Rebecca Flex.</span> CEO at Company.</p>
+            <p>No one is better than Tavel Agency.</p>
           </div>
 
             <!-- Modal -->
@@ -342,18 +363,7 @@
     ></script>
     <script>
 
-      function showHide(){
-        let show = true;
-         let section = document.querySelector(".jumbotron")
-          if(show == true){
-           section.style.visibility="hidden"
-           show=false
-          }else{
-            section.style.visibility=""
-            
-          }
-          show=true
-      }
+      
 
       function deleteAllCards(){
         let reference = document.querySelectorAll(".card")
